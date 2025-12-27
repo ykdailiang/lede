@@ -1,5 +1,17 @@
 # 欢迎来到 Lean 的 LEDE 源码仓库
 
+newifi3 升级64M flash 刷最新64M
+
+Fork coolsnowwolf/lede为 自己的项目，https://github.com/你的lede项目/lede.git
+
+进入lede/target/linux/ramips/image/mt7621.mk 改固件大小65216k
+
+进入lede/target/linux/ramips/dts/mt7621_d-team_newifi-d2.dts 改固件16进制大小 0x3fb0000。
+
+进入 你的项目/.github/workflows/Build_OpenWrt_Newifi-D2.yml
+
+改内容 REPO_URL: https://github.com/你的lede项目/lede.git
+
 为国产龙芯 LOONGSON SoC loongarch64 / 飞腾 Phytium 腾锐 D2000 系列架构添加支持
 
 I18N: [English](README_EN.md) | [简体中文](README.md) | [日本語](README_JA.md)
